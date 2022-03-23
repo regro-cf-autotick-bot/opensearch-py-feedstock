@@ -1,5 +1,5 @@
 {% set name = "opensearch-py" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opensearch-py-{{ version }}.tar.gz
-  sha256: fa952836cabfa1b2fb05f852edc1a373342494345e89fd52b7124daf4d296bb4
+  sha256: 7d0c41cea61fedc34542be7fb9169931360134cf823c596f719106c3bd8466fe
 
 build:
   number: 0
