@@ -1,11 +1,11 @@
-About opensearch-py
-===================
+About opensearch-py-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opensearch-py-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/opensearch-project/opensearch-py
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opensearch-py-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python low-level client for OpenSearch
 
