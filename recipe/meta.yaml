@@ -25,6 +25,7 @@ requirements:
     - urllib3 >=1.21.1,<2
     - requests >=2.4.0,<3.0.0
     - six
+    - python-dateutil
   run_constrained:
     - aiohttp >=3,<4
 
