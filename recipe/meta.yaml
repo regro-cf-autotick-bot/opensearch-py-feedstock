@@ -11,7 +11,7 @@ source:
   sha256: 564f175af134aa885f4ced6846eb4532e08b414fff0a7976f76b276fe0e69158
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +22,7 @@ requirements:
   run:
     - certifi
     - python >=3.6,<4.0
-    - urllib3 >=1.21.1,<2
+    - urllib3 >=1.26.18
     - requests >=2.4.0,<3.0.0
     - six
     - python-dateutil
