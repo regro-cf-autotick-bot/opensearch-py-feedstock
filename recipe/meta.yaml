@@ -1,5 +1,5 @@
 {% set name = "opensearch-py" %}
-{% set version = "2.4.2" %}
+{% set version = "2.5.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opensearch-py-{{ version }}.tar.gz
-  sha256: 564f175af134aa885f4ced6846eb4532e08b414fff0a7976f76b276fe0e69158
+  sha256: 0dde4ac7158a717d92a8cd81964cb99705a4b80bcf9258ba195b9a9f23f5226d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
