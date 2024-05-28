@@ -1,13 +1,13 @@
 {% set name = "opensearch-py" %}
-{% set version = "2.5.0" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opensearch-py-{{ version }}.tar.gz
-  sha256: 0dde4ac7158a717d92a8cd81964cb99705a4b80bcf9258ba195b9a9f23f5226d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 0b7c27e8ed84c03c99558406927b6161f186a72502ca6d0325413d8e5523ba96
 
 build:
   noarch: python
