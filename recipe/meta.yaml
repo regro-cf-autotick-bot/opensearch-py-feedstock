@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opensearch-py-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opensearch-py-{{ version }}.tar.gz
   sha256: 0dde4ac7158a717d92a8cd81964cb99705a4b80bcf9258ba195b9a9f23f5226d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6,<4.0
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6,<4.0
+    - python >={{ python_min }},<4.0
     - urllib3 >=1.26.18,<2
     - requests >=2.4.0,<3.0.0
     - six
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/opensearch-project/opensearch-py
